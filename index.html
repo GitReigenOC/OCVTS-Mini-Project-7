@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AniVault | Dynamic Anime Showcase</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlL9VZPX_EUEHT3YlXW4voziTTofJNSHRu5eZjT1ZQwQ&s=10">
+</head>
+<body>
+    <header>
+        <h1>Ani<span>Vault</span></h1>
+        <p>Explore, filter, and discover top-rated anime series</p>
+    </header>
+
+    <main>
+        <section class="controls">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search anime by title or keyword...">
+            </div>
+
+            <div class="filter-buttons" id="filterButtons">
+                <button class="filter-btn active" data-category="All">All</button>
+                <button class="filter-btn" data-category="Action">Action</button>
+                <button class="filter-btn" data-category="Fantasy">Fantasy</button>
+                <button class="filter-btn" data-category="Sci-Fi">Sci-Fi</button>
+                <button class="filter-btn" data-category="Slice of Life">Slice of Life</button>
+            </div>
+
+            <div class="sort-box">
+                <label for="sortSelect">Sort by:</label>
+                <select id="sortSelect">
+                    <option value="default">Featured</option>
+                    <option value="az">Title (A–Z)</option>
+                    <option value="rating-high">Highest Rated</option>
+                    <option value="newest">Newest Release</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="gallery-grid" id="galleryGrid">
+
+        </section>
+    </main>
+
+    <div class="modal-overlay" id="detailsModal">
+        <div class="modal-content">
+            <button class="close-btn" id="closeModal">&times;</button>
+            <div id="modalBody">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
